@@ -1,5 +1,7 @@
 # Technical-Documentation-Page
 
+PREVIEW: https://codepen.io/sidrawaseem/pen/yLXWWgq
+
 freeCodeCamp challenge- To make a responsive documentation page:
 https://freecodecamp.org
 
