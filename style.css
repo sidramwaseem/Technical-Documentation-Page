@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Source+Serif+Pro&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.7em;
+  background-color: rgb(179, 177, 175);
+}
+header {
+  font-size: 2rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+#navbar {
+  width: 100%;
+  height: 250px;
+  background-color: rgb(179, 177, 175);
+  border-bottom: 5px solid rgb(106, 106, 106);
+  overflow-y: scroll;
+}
+#navbar header {
+  padding: 15px;
+}
+#navbar ul {
+  padding: 0;
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Source Serif Pro", serif;
+}
+.nav-link {
+  padding: 10px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  border-top: 2px solid rgb(106, 106, 106);
+}
+.nav-link:hover {
+  background-color: #eee;
+}
+code {
+  display: inline;
+  background-color: rgb(87, 87, 87);
+  margin: auto 15px;
+  text-align: left;
+}
+.main-section p {
+  font-size: 1.2rem;
+}
+.main-section ul {
+  font-size: 1.2em;
+}
+#main-doc {
+  position: absolute;
+  margin: 2%;
+}
+
+@media only screen and (min-width: 850px) {
+  .body-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  #navbar {
+    min-width: 25%;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    border-right: 5px solid rgb(106, 106, 106);
+  }
+  #main-doc {
+    position: absolute;
+    margin-left: 30%;
+  }
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 30px;
+  }
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Python Documentation Page</title>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+          <li><a href="#introduction" class="nav-link">Introduction</a></li>
+          <li>
+            <a href="#design_philosophy" class="nav-link">Design Philosophy</a>
+          </li>
+          <li><a href="#variables" class="nav-link">Variables</a></li>
+          <li><a href="#strings" class="nav-link">Strings</a></li>
+          <li><a href="#numbers" class="nav-link">Numbers</a></li>
+          <li>
+            <a href="#conditional_statements" class="nav-link"
+              >Conditional Statements</a
+            >
+          </li>
+          <li><a href="#indentation" class="nav-link">Indentation</a></li>
+          <li><a href="#lists" class="nav-link">Lists</a></li>
+          <li><a href="#zen_python" class="nav-link">Zen Python</a></li>
+          <li><a href="#comments" class="nav-link">Comments</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="introduction">
+          <header>Introduction</header>
+          <p>
+            Python is an interpreted high-level general-purpose programming
+            language. Its design philosophy emphasizes code readability with its
+            use of significant indentation. Its language constructs as well as
+            its object-oriented approach aim to help programmers write clear,
+            logical code for small and large-scale projects.
+          </p>
+          <ul>
+            <li>Python is dynamically-typed and garbage-collected.</li>
+            <li>
+              It supports multiple programming paradigms, including structured
+              (particularly, procedural), object-oriented and functional
+              programming.
+            </li>
+            <li>
+              It is often described as a "batteries included" language due to
+              its comprehensive standard library.
+            </li>
+          </ul>
+        </section>
+        <section class="main-section" id="design_philosophy">
+          <header>Design Philosophy</header>
+          <p>
+            Python is a multi-paradigm programming language. Object-oriented
+            programming and structured programming are fully supported, and many
+            of its features support functional programming and aspect-oriented
+            programming (including by metaprogramming and metaobjects (magic
+            methods)).Many other paradigms are supported via extensions,
+            including design by contract and logic programming.
+          </p>
+          <ul>
+            <li>Beautiful is better than ugly.</li>
+            <li>Explicit is better than implicit.</li>
+            <li>Simple is better than complex.</li>
+            <li>Complex is better than complicated.</li>
+            <li>Readability counts.</li>
+          </ul>
+        </section>
+        <section class="main-section" id="variables">
+          <header>Variables</header>
+          <p>
+            Variables are containers for storing data values.Python has no
+            command for declaring a variable.A variable is created the moment
+            you first assign a value to it.
+          </p>
+          <code>
+            <div>x = 5</div>
+            <div>y = "John"</div>
+            <div>print(x)</div>
+            <div>print(y)</div></code
+          >
+          <p>
+            Variables do not need to be declared with any particular type, and
+            can even change type after they have been set.
+          </p>
+          <code>
+            <div>x = 4 # x is of type int</div>
+            <div>x = "Sally" # x is now of type str</div>
+            <div>print(x)</div>
+          </code>
+        </section>
+        <section class="main-section" id="strings">
+          <header>Strings</header>
+          <p>
+            Strings in python are surrounded by either single quotation marks,
+            or double quotation marks.'hello' is the same as "hello".You can
+            display a string literal with the print() function:
+          </p>
+          <code>
+            <div>print("Hello")</div>
+            <div>print('Hello')</div>
+          </code>
+          <p>
+            Assigning a string to a variable is done with the variable name
+            followed by an equal sign and the string:
+          </p>
+          <code>
+            <div>a = "Hello"</div>
+            <div>print(a)</div>
+          </code>
+        </section>
+        <section class="main-section" id="numbers">
+          <header>Numbers</header>
+          <p>There are three numeric types in Python:</p>
+          <ul>
+            <li>int</li>
+            <li>float</li>
+            <li>complex</li>
+          </ul>
+          <p>
+            Variables of numeric types are created when you assign a value to
+            them:
+          </p>
+          <code>
+            <div>x = 1 # int</div>
+            <div>y = 2.8 # float</div>
+            <div>z = 1j # complex</div>
+          </code>
+          <p>
+            To verify the type of any object in Python, use the type() function:
+          </p>
+          <code>
+            <div>print(type(x))</div>
+            <div>print(type(y))</div>
+            <div>print(type(z))</div>
+          </code>
+        </section>
+        <section class="main-section" id="conditional_statements">
+          <header>Conditional Statements</header>
+          <p>Python supports the usual logical conditions from mathematics:</p>
+          <ul>
+            <li>Equals: a == b</li>
+            <li>Not Equals: a != b</li>
+            <li>Less than: a < b</li>
+            <li>Less than or equal to: a <= b</li>
+            <li>Greater than: a > b</li>
+            <li>Greater than or equal to: a >= b</li>
+          </ul>
+          <p>
+            These conditions can be used in several ways, most commonly in "if
+            statements" and loops. An "if statement" is written by using the if
+            keyword.
+          </p>
+          <code>
+            <div>a = 33</div>
+            <div>b = 200</div>
+            <div>if b > a:</div>
+            <div>print("b is greater than a")</div>
+          </code>
+        </section>
+        <section class="main-section" id="indentation">
+          <header>Indentation</header>
+          <p>
+            Python relies on indentation (whitespace at the beginning of a line)
+            to define scope in the code. Other programming languages often use
+            curly-brackets for this purpose.
+          </p>
+          <p>If statement, without indentation (will raise an error):</p>
+          <code>
+            <div>a = 33</div>
+            <div>b = 200</div>
+            <div>if b > a:</div>
+            <div>print("b is greater than a") # you will get an error</div>
+          </code>
+        </section>
+        <section class="main-section" id="lists">
+          <header>Lists</header>
+          <p>Lists are used to store multiple items in a single variable.</p>
+          <p>
+            Lists are one of 4 built-in data types in Python used to store
+            collections of data, the other 3 are Tuple, Set, and Dictionary, all
+            with different qualities and usage.
+          </p>
+          <p>Lists are created using square brackets:</p>
+          <code>
+            <div>thislist = ["apple", "banana", "cherry"]</div>
+            <div>print(thislist)</div>
+          </code>
+          <h3>List Items</h3>
+          <ul>
+            <li>
+              List items are ordered, changeable, and allow duplicate values.
+            </li>
+            <li>
+              List items are indexed, the first item has index <code>[0]</code>,
+              the second item has index <code>[1]</code> etc.
+            </li>
+          </ul>
+        </section>
+        <section class="main-section" id="zen_python">
+          <header>Zen python</header>
+          <p>
+            The Zen of Python is a collection of 19 "guiding principles" for
+            writing computer programs that influence the design of the Python
+            programming language.Software engineer Tim Peters wrote this set of
+            principles and posted it on the Python mailing list in 1999.Peters's
+            list left open a 20th principle "for Guido to fill in", referring to
+            Guido van Rossum, the original author of the Python language. The
+            vacancy for a 20th principle has not been filled.
+          </p>
+          <p>
+            Peters's Zen of Python was included as entry number 20 in the
+            language's official Python Enhancement Proposals and was released
+            into the public domain.[3] It is also included as an Easter egg in
+            the Python interpreter, where it can be displayed by entering
+            <code>import this</code>.
+          </p>
+          <code>
+            <div>Beautiful is better than ugly.</div>
+            <div>Explicit is better than implicit.</div>
+            <div>Simple is better than complex.</div>
+            <div>Complex is better than complicated.</div>
+            <div>Flat is better than nested.</div>
+            <div>Sparse is better than dense.</div>
+            <div>Readability counts.</div>
+            <div>Special cases aren't special enough to break the rules.</div>
+            <div>Although practicality beats purity.</div>
+            <div>Errors should never pass silently.</div>
+            <div>Unless explicitly silenced.</div>
+            <div>In the face of ambiguity, refuse the temptation to guess.</div>
+            <div>
+              There should be one-- and preferably only one --obvious way to do
+              it.
+            </div>
+            <div>
+              Although that way may not be obvious at first unless you're Dutch.
+            </div>
+            <div>Now is better than never.</div>
+            <div>Although never is often better than *right* now.</div>
+            <div>
+              If the implementation is hard to explain, it's a bad idea.
+            </div>
+            <div>
+              If the implementation is easy to explain, it may be a good idea.
+            </div>
+            <div>
+              Namespaces are one honking great idea -- let's do more of those!
+            </div></code
+          >
+        </section>
+        <section class="main-section" id="comments">
+          <header>Comments</header>
+          <ul>
+            <li>Comments can be used to explain Python code.</li>
+            <li>Comments can be used to make the code more readable.</li>
+            <li>
+              Comments can be used to prevent execution when testing code.
+            </li>
+          </ul>
+          <p>
+            Comments starts with a <code>#</code>, and Python will ignore them:
+          </p>
+          <code>
+            <div>#This is a comment</div>
+            <div>print("Hello, World!")</div>
+          </code>
+          <p>
+            Since Python will ignore string literals that are not assigned to a
+            variable, you can add a multiline string (triple quotes) in your
+            code, and place your comment inside it:
+          </p>
+          <code>
+            <div>"""</div>
+            <div>This is a</div>
+            <div>comment written</div>
+            <div>in more than</div>
+            <div>just one line</div>
+            <div>"""</div>
+            <div>print("Hello, World!")</div>
+          </code>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
